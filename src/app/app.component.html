@@ -1,13 +1,17 @@
-<a-scene embedded arjs cursor="rayOrigin: mouse">
+<a-scene embedded arjs>
+  <!-- الكاميرا -->
+  <a-entity camera position="0 1.6 0"></a-entity>
+
+  <!-- الصورة التي ستظهر عند النقر -->
   <a-image 
     id="image"
     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7pji_efgEGvPvZ3zYP13RwIVPjNRio4kpOQ&s"
-    position="0 0 0"
+    position="0 0 -2"
     scale="1 1 1"
     visible="false"
     class="clickable">
   </a-image>
 
-  <a-entity id="cursor" cursor="rayOrigin: mouse" raycaster="objects: .clickable"></a-entity>
-  <a-entity camera position="0 1.6 0"></a-entity>
+  <!-- المؤشر -->
+  <a-entity cursor="rayOrigin: mouse" raycaster="objects: .clickable"></a-entity>
 </a-scene>

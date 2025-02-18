@@ -37,10 +37,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [
-                "node_modules/aframe/dist/aframe-v1.6.0.min.js",
-  "node_modules/ar.js/aframe/build/aframe-ar.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
